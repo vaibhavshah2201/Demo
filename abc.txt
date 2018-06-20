@@ -1,0 +1,9 @@
+$('#div-launch-modules-col #div-panel-body.panel-body').each(function(e){
+	$(this).on('click',function(e){
+	var jsHref=$(this).find('a').first().attr('href').split(':');
+	//alert(xyz[1]+">>>>"+e.target);
+	eval(jsHref[1]);
+	}).find('i.fade-in-info,div#div-hidden-text').on('click', function (e) {
+  		e.stopPropagation();
+	});
+})
